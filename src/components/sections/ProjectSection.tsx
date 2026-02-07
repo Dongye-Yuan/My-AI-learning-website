@@ -1,68 +1,16 @@
 /**
  * Project Section - 项目路演区域
- * 展示：痛点场景 → MVP 产品 → 思考过程
+ * 展示：痛点场景 → MVP 产品 → 成果展示 → 思考过程
  */
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Lightbulb, Rocket, Target, ExternalLink } from "lucide-react";
+import { Lightbulb, Rocket, Target, ExternalLink, Award } from "lucide-react";
+import { profileData } from "@/content/profile";
 
 const ProjectSection = () => {
-  // 🔧 可编辑内容配置
-  const project = {
-    name: "你的项目名称",
-    tagline: "一句话描述你的产品价值",
-    demoUrl: "https://your-demo.vercel.app",
-    githubUrl: "https://github.com/yourusername/your-project",
-    
-    // 痛点场景
-    painPoints: [
-      {
-        title: "痛点 1",
-        description: "描述你发现的第一个真实痛点，用户遇到了什么问题？"
-      },
-      {
-        title: "痛点 2", 
-        description: "描述第二个关键痛点，为什么现有解决方案不够好？"
-      }
-    ],
-
-    // MVP 功能
-    mvpFeatures: [
-      {
-        title: "核心功能 1",
-        description: "描述你的 MVP 第一个核心功能及其价值",
-        tech: ["React", "Tailwind CSS"]
-      },
-      {
-        title: "核心功能 2",
-        description: "描述第二个核心功能，如何解决用户痛点",
-        tech: ["Supabase", "API"]
-      },
-      {
-        title: "核心功能 3",
-        description: "描述第三个亮点功能，有什么创新之处",
-        tech: ["AI", "自动化"]
-      }
-    ],
-
-    // 思考过程
-    insights: [
-      {
-        phase: "发现问题",
-        content: "分享你是如何发现这个问题的，有什么洞察？"
-      },
-      {
-        phase: "设计方案",
-        content: "你的解决方案设计思路是什么？为什么选择这个方向？"
-      },
-      {
-        phase: "快速验证",
-        content: "如何用 MVP 快速验证想法？学到了什么？"
-      }
-    ]
-  };
+  const { project } = profileData;
 
   return (
     <section id="projects" className="py-20 px-4">
@@ -79,7 +27,7 @@ const ProjectSection = () => {
           <CardHeader className="text-center">
             <CardTitle className="text-3xl">{project.name}</CardTitle>
             <CardDescription className="text-lg">{project.tagline}</CardDescription>
-            <div className="flex gap-4 justify-center pt-4">
+            <div className="flex gap-4 justify-center pt-4 flex-wrap">
               <Button asChild>
                 <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="w-4 h-4 mr-2" />
@@ -88,6 +36,7 @@ const ProjectSection = () => {
               </Button>
               <Button variant="outline" asChild>
                 <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                  <Github className="w-4 h-4 mr-2" />
                   查看代码
                 </a>
               </Button>
@@ -104,7 +53,7 @@ const ProjectSection = () => {
             <h3 className="text-2xl font-bold">痛点场景</h3>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {project.painPoints.map((pain, index) => (
               <Card key={index} className="card-shadow hover:shadow-lg transition-shadow">
                 <CardHeader>
@@ -146,11 +95,34 @@ const ProjectSection = () => {
           </div>
         </div>
 
-        {/* 思考过程 */}
+        {/* 成果展示 */}
         <div className="space-y-6">
           <div className="flex items-center gap-3">
             <div className="p-3 bg-accent/10 rounded-lg">
-              <Lightbulb className="w-6 h-6 text-accent" />
+              <Award className="w-6 h-6 text-accent" />
+            </div>
+            <h3 className="text-2xl font-bold">成果展示</h3>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-6">
+            {project.achievements.map((achievement, index) => (
+              <Card key={index} className="card-shadow hover:scale-105 transition-transform">
+                <CardHeader className="text-center">
+                  <CardTitle className="text-xl">{achievement.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p className="text-muted-foreground">{achievement.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* 思考过程 */}
+        <div className="space-y-6">
+          <div className="flex items-center gap-3">
+            <div className="p-3 bg-primary/10 rounded-lg">
+              <Lightbulb className="w-6 h-6 text-primary" />
             </div>
             <h3 className="text-2xl font-bold">从点子到产品的思考</h3>
           </div>
@@ -178,5 +150,8 @@ const ProjectSection = () => {
     </section>
   );
 };
+
+// 导入 Github 图标
+import { Github } from "lucide-react";
 
 export default ProjectSection;
