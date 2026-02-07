@@ -93,7 +93,7 @@ export const profileData = {
       ],
       stack: ["React", "TypeScript", "Tailwind CSS", "OpenAI API", "Vercel"],
       links: {
-        demo: "https://action-starter.vercel.app",
+        demo: "https://fb7ba741d8c3403c800df429edeea56c.prod.enter.pro",
         github: "https://github.com/wangmengyuan/action-starter"
       }
     },
