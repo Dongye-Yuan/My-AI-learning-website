@@ -27,13 +27,13 @@ const TechStackSection = () => {
   };
 
   return (
-    <section id="tech-stack" className="py-20 px-4">
+    <section id="deploy" className="py-20 px-4">
       <div className="max-w-6xl mx-auto space-y-16">
         
         {/* Section Header */}
         <div className="text-center space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold">技术栈 & 部署</h2>
-          <p className="text-xl text-muted-foreground">现代化的开发工具链</p>
+          <h2 className="text-4xl md:text-5xl font-bold">技术栈 & 工程化</h2>
+          <p className="text-xl text-muted-foreground">从开发到部署的完整流程</p>
         </div>
 
         {/* 技术栈展示 */}

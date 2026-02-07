@@ -13,9 +13,9 @@ const NavigationBar = () => {
 
   const navItems = [
     { label: "首页", href: "#hero" },
-    { label: "项目路演", href: "#projects" },
-    { label: "学习复盘", href: "#learning" },
-    { label: "技术栈", href: "#tech-stack" },
+    { label: "项目", href: "#projects" },
+    { label: "学习", href: "#learning" },
+    { label: "部署", href: "#deploy" },
     { label: "AI 分身", href: "#chat" }
   ];
 
@@ -32,7 +32,7 @@ const NavigationBar = () => {
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           {/* Logo */}
           <div className="font-bold text-xl text-gradient">
-            毕业展示
+            王梦缘
           </div>
 
           {/* 桌面端导航链接 */}

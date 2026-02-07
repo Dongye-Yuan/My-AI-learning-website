@@ -18,8 +18,8 @@ const ProjectSection = () => {
         
         {/* Section Header */}
         <div className="text-center space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold">项目路演</h2>
-          <p className="text-xl text-muted-foreground">从痛点到产品的完整历程</p>
+          <h2 className="text-4xl md:text-5xl font-bold">项目作品</h2>
+          <p className="text-xl text-muted-foreground">从需求分析到产品上线的完整实践</p>
         </div>
 
         {/* 项目概览卡片 */}

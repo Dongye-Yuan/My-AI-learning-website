@@ -19,8 +19,8 @@ const LearningSection = () => {
         
         {/* Section Header */}
         <div className="text-center space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold">学习复盘</h2>
-          <p className="text-xl text-muted-foreground">AI 编程的心得与成长路径</p>
+          <h2 className="text-4xl md:text-5xl font-bold">学习历程</h2>
+          <p className="text-xl text-muted-foreground">AI 编程学习路径与关键收获</p>
         </div>
 
         {/* AI 编程心得 */}

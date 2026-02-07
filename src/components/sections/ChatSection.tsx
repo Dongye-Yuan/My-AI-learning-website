@@ -23,6 +23,7 @@ const ChatSection = () => {
   const [messages, setMessages] = useState<Message[]>(aiChat.welcomeMessages);
 
   // 🔧 TODO: 未来接入 AI API
+  // 预留 sendMessage 方法，接入 API 时使用 aiChat.systemPrompt
   const sendMessage = async () => {
     if (!inputValue.trim()) return;
 
@@ -35,10 +36,19 @@ const ChatSection = () => {
     setInputValue("");
 
     // 模拟 AI 回复（未来替换为真实 API 调用）
+    // 接入 API 时使用：
+    // const response = await fetch('/api/chat', {
+    //   method: 'POST',
+    //   body: JSON.stringify({
+    //     messages: [...messages, userMessage],
+    //     systemPrompt: aiChat.systemPrompt
+    //   })
+    // });
+    
     setTimeout(() => {
       const aiResponse: Message = {
         role: 'assistant',
-        content: "感谢你的提问！这是一个模拟回复。未来这里会接入真实的 AI API（如 OpenAI/Anthropic）来提供智能回答。"
+        content: "感谢你的提问！这是一个模拟回复。未来这里会接入真实的 AI API（如 OpenAI/Anthropic）来提供基于王梦缘经历的智能回答。"
       };
       setMessages(prev => [...prev, aiResponse]);
     }, 1000);

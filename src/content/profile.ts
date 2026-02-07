@@ -1,5 +1,5 @@
 /**
- * 📝 毕业展示页内容配置中心
+ * 📝 个人网站内容配置中心
  * 所有可编辑内容集中在此文件，修改后即可更新整个网站
  */
 
@@ -8,79 +8,79 @@ export const profileData = {
   // 🎯 个人基本信息
   // ====================================
   personal: {
-    name: "张小明",
-    title: "AI 编程课程毕业生",
-    graduationStatement: "从想法到产品，用 AI 重新定义编程的可能性",
-    description: "历时 8 周深入学习 AI 辅助编程，完成从 0 到 1 的产品实践，探索 AI 时代的开发新范式。",
-    badges: ["AI 编程", "全栈开发", "产品思维"],
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Felix",
+    name: "王梦缘",
+    title: "AI 学习历程 & 作品集",
+    graduationStatement: "从想法到产品，用 AI 加速交付",
+    description: "深度学习 AI 辅助编程，掌握从需求分析到产品上线的完整流程。擅长快速原型验证与迭代优化，具备全栈开发与产品思维。",
+    badges: ["AI 编程", "全栈开发", "快速交付"],
+    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=WangMengyuan",
     
     // 社交链接
     social: {
-      github: "https://github.com/yourusername",
-      linkedin: "https://linkedin.com/in/yourprofile",
-      email: "your.email@example.com",
+      github: "https://github.com/wangmengyuan",
+      linkedin: "https://linkedin.com/in/wangmengyuan",
+      email: "wangmengyuan@example.com",
       wechat: "your-wechat-id"
     }
   },
 
   // ====================================
-  // 🚀 项目路演信息
+  // 🚀 项目作品集
   // ====================================
   project: {
-    name: "智能学习助手",
-    tagline: "用 AI 让每个人都拥有专属学习导师",
+    name: "AI 驱动的任务管理系统",
+    tagline: "智能分析任务优先级，提升团队协作效率",
     demoUrl: "https://your-demo.vercel.app",
-    githubUrl: "https://github.com/yourusername/your-project",
+    githubUrl: "https://github.com/wangmengyuan/your-project",
     
     // 痛点场景
     painPoints: [
       {
-        title: "学习资源碎片化",
-        description: "网上学习资料太多太杂，不知道从哪里开始，缺乏系统化的学习路径规划。"
+        title: "任务优先级混乱",
+        description: "团队任务繁多，成员难以判断哪些工作最重要，经常出现紧急任务延误的情况。"
       },
       {
-        title: "缺少个性化反馈",
-        description: "传统课程是一对多教学，无法根据个人进度和理解程度调整，遇到问题得不到及时解答。"
+        title: "协作信息分散",
+        description: "项目信息散落在邮件、群聊、文档等多个平台，查找历史记录耗时，沟通成本高。"
       },
       {
-        title: "学习进度难坚持",
-        description: "自学容易三天打鱼两天晒网，没有督促机制，很难持续学习并形成习惯。"
+        title: "进度追踪困难",
+        description: "管理者难以实时了解项目进展，成员工作量不透明，导致资源分配不合理。"
       }
     ],
 
     // MVP 核心功能
     mvpFeatures: [
       {
-        title: "AI 智能问答",
-        description: "基于 GPT-4 的智能助手，24/7 随时解答学习疑问，提供针对性的讲解和示例代码。",
+        title: "AI 智能优先级排序",
+        description: "基于任务描述、截止日期和依赖关系，AI 自动计算优先级评分，帮助团队聚焦核心工作。",
         tech: ["OpenAI API", "React", "TypeScript"]
       },
       {
-        title: "个性化学习路径",
-        description: "根据用户背景和目标，AI 自动生成定制化学习计划，每天推送适合当前水平的学习内容。",
-        tech: ["Supabase", "RAG", "Vector DB"]
+        title: "实时协作看板",
+        description: "可视化任务流转状态，支持拖拽操作，团队成员实时同步进度，减少信息不对称。",
+        tech: ["React DnD", "Supabase Realtime", "WebSocket"]
       },
       {
-        title: "进度追踪与激励",
-        description: "可视化学习进度，设置每日目标和里程碑，完成后获得成就徽章，保持学习动力。",
-        tech: ["Chart.js", "Gamification"]
+        title: "智能工作量分析",
+        description: "自动统计成员任务量与工时，生成可视化报表，辅助管理者优化资源分配。",
+        tech: ["Chart.js", "Data Analytics"]
       }
     ],
 
     // 成果展示
     achievements: [
       {
-        title: "快速迭代",
-        description: "从想法到 MVP 仅用 2 周"
+        title: "快速交付",
+        description: "3 周完成 MVP 并上线"
       },
       {
-        title: "用户验证",
-        description: "10+ 早期用户测试，NPS 达 8.5/10"
+        title: "用户采纳",
+        description: "5 个团队试用，效率提升 40%"
       },
       {
-        title: "技术突破",
-        description: "首次独立完成全栈 + AI 集成"
+        title: "技术深度",
+        description: "全栈 + AI + 实时协作完整实现"
       }
     ],
 
@@ -88,15 +88,61 @@ export const profileData = {
     insights: [
       {
         phase: "发现问题",
-        content: "我在学习编程时发现，虽然网上资源很多，但很难找到适合自己水平的系统路径。和同学交流后发现这是普遍痛点，于是决定用 AI 来解决这个问题。"
+        content: "在实习期间观察到团队任务管理混乱，成员经常不清楚优先级。调研后发现市面工具功能繁杂但缺乏智能引导，于是决定做一个 AI 驱动的轻量级解决方案。"
       },
       {
         phase: "设计方案",
-        content: "核心思路是「AI + 个性化」。不是简单的聊天机器人，而是能理解用户背景、追踪学习进度、主动推荐内容的智能导师。技术上选择 OpenAI API + Supabase，快速验证可行性。"
+        content: "核心策略是「AI + 可视化」。用 AI 分析任务属性自动排序，用看板让进度一目了然。技术选型考虑快速验证，选择 React + Supabase + OpenAI API，3 周内完成核心功能。"
       },
       {
-        phase: "快速验证",
-        content: "先做最小 MVP：AI 问答 + 进度记录。用 Cursor 加速开发，2 周完成并邀请 10 位朋友测试。根据反馈迭代了 3 个版本，学到了「先解决核心痛点，再添加功能」的产品思维。"
+        phase: "快速迭代",
+        content: "第一版只做优先级排序和基础看板，邀请 3 个团队试用。根据反馈发现工作量分析是刚需，快速补充了数据统计模块。学到了「MVP 要足够小，迭代要足够快」的产品方法论。"
+      }
+    ]
+  },
+
+  // 第二个项目（可选）
+  project2: {
+    name: "个人知识库 AI 助手",
+    tagline: "基于笔记内容的智能问答系统",
+    demoUrl: "https://knowledge-assistant.vercel.app",
+    githubUrl: "https://github.com/wangmengyuan/knowledge-assistant",
+    
+    painPoints: [
+      {
+        title: "笔记难以复用",
+        description: "积累的学习笔记越来越多，但想要查找某个知识点时却很难快速定位。"
+      }
+    ],
+    
+    mvpFeatures: [
+      {
+        title: "笔记智能检索",
+        description: "基于语义搜索，输入问题即可找到相关笔记段落，无需记住关键词。",
+        tech: ["Vector DB", "RAG", "Embedding"]
+      },
+      {
+        title: "AI 知识问答",
+        description: "基于个人笔记内容生成回答，确保信息来源可追溯，避免 AI 幻觉。",
+        tech: ["OpenAI API", "Langchain"]
+      }
+    ],
+    
+    achievements: [
+      {
+        title: "快速验证",
+        description: "2 周完成原型"
+      },
+      {
+        title: "技术探索",
+        description: "深入实践 RAG 技术栈"
+      }
+    ],
+    
+    insights: [
+      {
+        phase: "技术选型",
+        content: "对比了多种向量数据库方案，最终选择 Supabase + pgvector，既能存储结构化数据又能做向量检索，降低了系统复杂度。"
       }
     ]
   },
@@ -108,16 +154,24 @@ export const profileData = {
     // AI 编程心得
     insights: [
       {
-        title: "AI 是思维放大器",
-        description: "AI 不是替代编程，而是让你专注于「想做什么」而非「怎么做」。清晰表达需求的能力变得比记住语法更重要，这极大提升了我的迭代速度。"
+        title: "AI 是效率倍增器",
+        description: "用 AI 辅助编程后，开发速度提升了 3-5 倍。AI 能快速生成脚手架代码，让我专注于业务逻辑和产品细节，而不是重复性的实现工作。"
       },
       {
-        title: "提示词工程是新技能",
-        description: "学会与 AI 对话是关键能力。好的提示词 = 清晰的问题描述 + 充足的上下文 + 期望的输出格式。花时间优化提示词比手写代码更高效。"
+        title: "提示词工程是核心能力",
+        description: "清晰的需求描述 + 充足的上下文 = 高质量的 AI 输出。我学会了结构化表达需求、提供代码示例、迭代优化提示词，这比记住 API 更重要。"
       },
       {
-        title: "从产品视角学开发",
-        description: "AI 让我能先关注用户价值，再思考技术实现。这种「产品优先」的思维帮我避免了过度工程化，始终聚焦核心问题。"
+        title: "快速验证比完美实现更重要",
+        description: "AI 让我能在短时间内实现想法并验证可行性。先做出能用的 MVP，根据反馈快速迭代，比追求完美设计更高效。"
+      },
+      {
+        title: "学会阅读和调试 AI 代码",
+        description: "AI 生成的代码不是完美的，需要理解其逻辑、发现潜在问题、优化性能。这让我更重视代码审查和测试。"
+      },
+      {
+        title: "构建个人知识库",
+        description: "将常用提示词、代码模板、问题解决方案记录下来，形成自己的 AI 协作手册，提升后续开发效率。"
       }
     ],
 
@@ -144,33 +198,33 @@ export const profileData = {
     learningPath: [
       {
         step: "1",
-        title: "熟悉 AI 编程工具",
-        content: "从 Cursor 或 GitHub Copilot 开始，学会基本的代码补全和生成，理解 AI 辅助编程的核心思维。",
-        duration: "Week 1-2"
+        title: "AI 工具入门",
+        content: "选择 Cursor 作为主力编辑器，学习代码补全、生成、重构等基础功能。理解 AI 是助手而非替代品。",
+        duration: "第 1 周"
       },
       {
         step: "2",
-        title: "掌握前端基础",
-        content: "学习 React + Tailwind CSS，用组件化思维构建界面。AI 能快速生成组件，你负责理解和优化。",
-        duration: "Week 3-4"
+        title: "前端开发实践",
+        content: "用 React + Tailwind CSS 构建界面，学习组件化思维。用 AI 快速生成组件骨架，手动优化细节和交互。",
+        duration: "第 2-3 周"
       },
       {
         step: "3",
-        title: "接入后端服务",
-        content: "使用 Supabase 实现数据存储、用户认证和 API。先跟着文档做，遇到问题让 AI 帮你调试。",
-        duration: "Week 5-6"
+        title: "后端与数据库",
+        content: "接入 Supabase 实现数据持久化、用户认证、实时订阅。学会读懂文档并用 AI 辅助调试。",
+        duration: "第 4-5 周"
       },
       {
         step: "4",
         title: "AI API 集成",
-        content: "接入 OpenAI/Anthropic API，学会提示词工程和流式响应。这是 AI 应用的核心环节。",
-        duration: "Week 7"
+        content: "接入 OpenAI/Anthropic API，实践提示词工程、流式响应、函数调用。这是 AI 应用的核心能力。",
+        duration: "第 6-7 周"
       },
       {
         step: "5",
-        title: "部署与迭代",
-        content: "用 Vercel 快速部署上线，收集用户反馈，持续迭代产品。技术是手段，解决问题才是目的。",
-        duration: "Week 8+"
+        title: "部署与优化",
+        content: "用 Vercel 部署上线，配置 CI/CD。学习性能优化、错误监控、用户反馈收集，持续迭代产品。",
+        duration: "第 8 周起"
       }
     ],
 
@@ -228,28 +282,50 @@ export const profileData = {
   // 🤖 AI 数字分身
   // ====================================
   aiChat: {
-    botName: "小明的 AI 分身",
-    botDescription: "我是基于小明学习经历训练的 AI 助手，可以回答关于课程、项目和学习路径的问题",
+    botName: "王梦缘的 AI 分身",
+    botDescription: "我是基于王梦缘学习经历和项目经验训练的 AI 助手，可以回答关于技术栈、项目和学习路径的问题",
     comingSoon: true, // 设置为 false 可启用聊天功能
+    
+    // System Prompt（未来接入 API 时使用）
+    systemPrompt: `你是王梦缘的 AI 数字分身，负责代表她回答 HR 和面试官的问题。
+
+背景信息：
+- 姓名：王梦缘
+- 定位：AI 学习者 & 全栈开发者
+- 核心能力：AI 辅助编程、快速原型开发、产品思维
+- 技术栈：React, TypeScript, Tailwind CSS, Supabase, OpenAI API
+- 项目经验：AI 驱动的任务管理系统、个人知识库 AI 助手
+
+回答风格：
+1. 真诚、专业、有条理
+2. 突出技术深度和产品思维
+3. 用具体案例说明能力
+4. 展现学习能力和快速迭代能力
+
+可以回答的问题类型：
+- 项目经验和技术细节
+- 学习路径和成长经历
+- 对 AI 编程的理解
+- 求职意向和职业规划`,
     
     // 欢迎消息
     welcomeMessages: [
       {
         role: "assistant",
-        content: "你好！我是小明的 AI 数字分身 👋"
+        content: "你好！我是王梦缘的 AI 数字分身 👋"
       },
       {
         role: "assistant",
-        content: "我可以回答关于 AI 编程课程、项目开发和学习路径的任何问题。你想了解什么呢？"
+        content: "我可以回答关于她的项目经验、技术栈、学习历程的任何问题。你想了解什么呢？"
       }
     ],
     
     // 建议问题
     suggestedQuestions: [
-      "你在课程中学到了什么？",
-      "如何开始 AI 编程学习？",
-      "你的项目是如何实现的？",
-      "有什么学习建议吗？"
+      "介绍一下你的项目经验",
+      "如何用 AI 加速开发流程？",
+      "你的技术栈和学习路径是什么？",
+      "为什么选择 AI 编程方向？"
     ]
   },
 
@@ -258,12 +334,12 @@ export const profileData = {
   // ====================================
   deployment: {
     github: {
-      repoUrl: "https://github.com/yourusername/graduation-showcase",
-      repoName: "graduation-showcase"
+      repoUrl: "https://github.com/wangmengyuan/portfolio",
+      repoName: "portfolio"
     },
     vercel: {
-      projectUrl: "https://your-project.vercel.app",
-      projectName: "graduation-showcase"
+      projectUrl: "https://wangmengyuan.vercel.app",
+      projectName: "wangmengyuan-portfolio"
     },
     
     // 部署步骤
