@@ -27,125 +27,147 @@ export const profileData = {
   // ====================================
   // 🚀 项目作品集
   // ====================================
-  project: {
-    name: "AI 驱动的任务管理系统",
-    tagline: "智能分析任务优先级，提升团队协作效率",
-    demoUrl: "https://your-demo.vercel.app",
-    githubUrl: "https://github.com/wangmengyuan/your-project",
+  projects: [
+    // 项目 1: 行动启动器
+    {
+      name: "行动启动器",
+      oneLiner: "帮助你克服启动困难，将想法转化为行动",
+      problem: [
+        {
+          title: "启动困难症",
+          description: "很多人有想法但迟迟不行动，总是拖延、等待完美时机，最终错失机会。"
+        },
+        {
+          title: "目标模糊不清",
+          description: "想做的事情太抽象，不知道第一步该做什么，导致无从下手。"
+        },
+        {
+          title: "缺少外部推力",
+          description: "缺乏督促和反馈机制，很难持续推进，容易半途而废。"
+        }
+      ],
+      mvp: [
+        {
+          title: "AI 需求拆解",
+          description: "输入模糊想法，AI 自动拆解成具体可执行的小步骤，降低启动门槛。",
+          tech: ["OpenAI API", "Prompt Engineering"]
+        },
+        {
+          title: "倒计时激励",
+          description: "设置截止日期后自动生成倒计时，营造紧迫感，推动立即行动。",
+          tech: ["React Hooks", "Notifications"]
+        },
+        {
+          title: "进度可视化",
+          description: "完成小任务即时打钩，进度条实时更新，获得正向反馈提升动力。",
+          tech: ["React", "Local Storage"]
+        }
+      ],
+      process: [
+        {
+          phase: "发现痛点",
+          content: "我自己就是重度拖延症患者，经常有想法但不行动。观察发现很多人都有「想做但启动困难」的问题，于是想做一个工具来解决。"
+        },
+        {
+          phase: "设计方案",
+          content: "核心思路是「降低启动门槛 + 营造紧迫感」。用 AI 把模糊想法拆解成第一步行动，用倒计时制造压力。技术选型轻量化，纯前端实现快速验证。"
+        },
+        {
+          phase: "快速迭代",
+          content: "第一版只做了任务拆解和倒计时，自己先用了一周。发现缺少成就感，补充了进度可视化。用 AI 辅助完成前端开发，2 周完成 MVP。"
+        }
+      ],
+      achievements: [
+        {
+          title: "快速验证",
+          description: "2 周完成 MVP 并自用"
+        },
+        {
+          title: "产品思维",
+          description: "从自身痛点出发找到真需求"
+        },
+        {
+          title: "AI 驱动",
+          description: "用 AI 拆解需求和生成代码"
+        }
+      ],
+      stack: ["React", "TypeScript", "Tailwind CSS", "OpenAI API", "Vercel"],
+      links: {
+        demo: "https://action-starter.vercel.app",
+        github: "https://github.com/wangmengyuan/action-starter"
+      }
+    },
     
-    // 痛点场景
-    painPoints: [
-      {
-        title: "任务优先级混乱",
-        description: "团队任务繁多，成员难以判断哪些工作最重要，经常出现紧急任务延误的情况。"
-      },
-      {
-        title: "协作信息分散",
-        description: "项目信息散落在邮件、群聊、文档等多个平台，查找历史记录耗时，沟通成本高。"
-      },
-      {
-        title: "进度追踪困难",
-        description: "管理者难以实时了解项目进展，成员工作量不透明，导致资源分配不合理。"
+    // 项目 2: 边听边记录
+    {
+      name: "边听边记录",
+      oneLiner: "AI 驱动的播客/视频笔记工具，边听边生成结构化笔记",
+      problem: [
+        {
+          title: "听课效率低",
+          description: "听播客或看视频时，来不及记笔记，事后回忆又想不起重点内容。"
+        },
+        {
+          title: "笔记难以检索",
+          description: "记录的笔记是流水账，没有结构，后续查找某个知识点非常困难。"
+        },
+        {
+          title: "无法提炼精华",
+          description: "1 小时的内容，哪些是核心观点？哪些是案例？自己整理耗时且不系统。"
+        }
+      ],
+      mvp: [
+        {
+          title: "实时语音转文字",
+          description: "播放音视频时，自动转录为文字，支持中英文识别，准确率高达 95%。",
+          tech: ["Web Speech API", "Whisper API"]
+        },
+        {
+          title: "AI 智能提炼",
+          description: "基于 AI 自动提取核心观点、关键论据、精彩案例，生成结构化笔记大纲。",
+          tech: ["OpenAI GPT-4", "Prompt Engineering"]
+        },
+        {
+          title: "时间轴标注",
+          description: "笔记关联音频时间轴，点击某段文字即可跳转到对应音频位置，方便回听。",
+          tech: ["React", "Audio API"]
+        }
+      ],
+      process: [
+        {
+          phase: "场景洞察",
+          content: "我经常听播客学习，但很难边听边记笔记，事后又记不住内容。调研发现很多人有同样困扰，市面缺少好用的工具。"
+        },
+        {
+          phase: "技术选型",
+          content: "核心是「实时转录 + AI 提炼」。对比了多个语音识别方案，最终选择 Whisper API（准确率高）+ GPT-4（理解能力强）。前端用 React 构建交互界面。"
+        },
+        {
+          phase: "MVP 验证",
+          content: "先做语音转文字 + 基础笔记功能，验证技术可行性。再接入 AI 提炼，优化提示词让输出更结构化。用 Cursor 加速开发，3 周完成核心功能。"
+        }
+      ],
+      achievements: [
+        {
+          title: "技术突破",
+          description: "实现实时语音识别 + AI 提炼"
+        },
+        {
+          title: "用户价值",
+          description: "自己每天使用，笔记效率提升 5 倍"
+        },
+        {
+          title: "完整闭环",
+          description: "从转录、提炼到检索的完整流程"
+        }
+      ],
+      stack: ["React", "TypeScript", "Whisper API", "OpenAI GPT-4", "Supabase"],
+      links: {
+        demo: "https://listen-note.vercel.app",
+        github: "https://github.com/wangmengyuan/listen-note"
       }
-    ],
-
-    // MVP 核心功能
-    mvpFeatures: [
-      {
-        title: "AI 智能优先级排序",
-        description: "基于任务描述、截止日期和依赖关系，AI 自动计算优先级评分，帮助团队聚焦核心工作。",
-        tech: ["OpenAI API", "React", "TypeScript"]
-      },
-      {
-        title: "实时协作看板",
-        description: "可视化任务流转状态，支持拖拽操作，团队成员实时同步进度，减少信息不对称。",
-        tech: ["React DnD", "Supabase Realtime", "WebSocket"]
-      },
-      {
-        title: "智能工作量分析",
-        description: "自动统计成员任务量与工时，生成可视化报表，辅助管理者优化资源分配。",
-        tech: ["Chart.js", "Data Analytics"]
-      }
-    ],
-
-    // 成果展示
-    achievements: [
-      {
-        title: "快速交付",
-        description: "3 周完成 MVP 并上线"
-      },
-      {
-        title: "用户采纳",
-        description: "5 个团队试用，效率提升 40%"
-      },
-      {
-        title: "技术深度",
-        description: "全栈 + AI + 实时协作完整实现"
-      }
-    ],
-
-    // 思考过程
-    insights: [
-      {
-        phase: "发现问题",
-        content: "在实习期间观察到团队任务管理混乱，成员经常不清楚优先级。调研后发现市面工具功能繁杂但缺乏智能引导，于是决定做一个 AI 驱动的轻量级解决方案。"
-      },
-      {
-        phase: "设计方案",
-        content: "核心策略是「AI + 可视化」。用 AI 分析任务属性自动排序，用看板让进度一目了然。技术选型考虑快速验证，选择 React + Supabase + OpenAI API，3 周内完成核心功能。"
-      },
-      {
-        phase: "快速迭代",
-        content: "第一版只做优先级排序和基础看板，邀请 3 个团队试用。根据反馈发现工作量分析是刚需，快速补充了数据统计模块。学到了「MVP 要足够小，迭代要足够快」的产品方法论。"
-      }
-    ]
-  },
-
-  // 第二个项目（可选）
-  project2: {
-    name: "个人知识库 AI 助手",
-    tagline: "基于笔记内容的智能问答系统",
-    demoUrl: "https://knowledge-assistant.vercel.app",
-    githubUrl: "https://github.com/wangmengyuan/knowledge-assistant",
-    
-    painPoints: [
-      {
-        title: "笔记难以复用",
-        description: "积累的学习笔记越来越多，但想要查找某个知识点时却很难快速定位。"
-      }
-    ],
-    
-    mvpFeatures: [
-      {
-        title: "笔记智能检索",
-        description: "基于语义搜索，输入问题即可找到相关笔记段落，无需记住关键词。",
-        tech: ["Vector DB", "RAG", "Embedding"]
-      },
-      {
-        title: "AI 知识问答",
-        description: "基于个人笔记内容生成回答，确保信息来源可追溯，避免 AI 幻觉。",
-        tech: ["OpenAI API", "Langchain"]
-      }
-    ],
-    
-    achievements: [
-      {
-        title: "快速验证",
-        description: "2 周完成原型"
-      },
-      {
-        title: "技术探索",
-        description: "深入实践 RAG 技术栈"
-      }
-    ],
-    
-    insights: [
-      {
-        phase: "技术选型",
-        content: "对比了多种向量数据库方案，最终选择 Supabase + pgvector，既能存储结构化数据又能做向量检索，降低了系统复杂度。"
-      }
-    ]
-  },
+    }
+  ],
 
   // ====================================
   // 📚 学习复盘
@@ -155,23 +177,23 @@ export const profileData = {
     insights: [
       {
         title: "AI 是效率倍增器",
-        description: "用 AI 辅助编程后，开发速度提升了 3-5 倍。AI 能快速生成脚手架代码，让我专注于业务逻辑和产品细节，而不是重复性的实现工作。"
+        description: "用 AI 辅助开发「行动启动器」和「边听边记录」，开发速度提升了 5 倍。AI 能快速生成脚手架代码，让我专注于产品逻辑和用户体验。"
       },
       {
         title: "提示词工程是核心能力",
-        description: "清晰的需求描述 + 充足的上下文 = 高质量的 AI 输出。我学会了结构化表达需求、提供代码示例、迭代优化提示词，这比记住 API 更重要。"
+        description: "在「行动启动器」中，用精准的提示词让 AI 拆解需求；在「边听边记录」中，优化提示词让笔记提炼更结构化。清晰的需求描述 + 充足的上下文 = 高质量输出。"
       },
       {
         title: "快速验证比完美实现更重要",
-        description: "AI 让我能在短时间内实现想法并验证可行性。先做出能用的 MVP，根据反馈快速迭代，比追求完美设计更高效。"
+        description: "两个项目都先做最小 MVP 验证核心价值，再根据使用反馈迭代。「行动启动器」2 周、「边听边记录」3 周就完成核心功能并自用。"
       },
       {
-        title: "学会阅读和调试 AI 代码",
-        description: "AI 生成的代码不是完美的，需要理解其逻辑、发现潜在问题、优化性能。这让我更重视代码审查和测试。"
+        title: "从自身痛点出发",
+        description: "做自己需要的产品更容易成功。我自己是拖延症患者、也经常听播客学习，这两个痛点催生了两个产品，每天自用持续优化。"
       },
       {
-        title: "构建个人知识库",
-        description: "将常用提示词、代码模板、问题解决方案记录下来，形成自己的 AI 协作手册，提升后续开发效率。"
+        title: "学会调试 AI 生成的代码",
+        description: "AI 生成的代码需要理解、测试和优化。在开发中学会了快速定位问题、调整代码逻辑、优化性能，这比单纯依赖 AI 更重要。"
       }
     ],
 
@@ -179,18 +201,18 @@ export const profileData = {
     keyMethods: [
       {
         number: "01",
-        title: "用 AI 快速搭建原型",
-        description: "先用 Cursor/v0.dev 快速生成基础代码，再手动优化细节，效率提升 5 倍。"
+        title: "AI 辅助需求拆解",
+        description: "用 AI 将模糊想法拆解成可执行步骤。例如「行动启动器」就是通过 AI 把大目标分解成小任务，降低启动门槛。"
       },
       {
         number: "02",
-        title: "边做边学，不求完美",
-        description: "不等学完再动手，而是带着问题学习。AI 能即时解答，比看文档快得多。"
+        title: "快速 MVP 验证",
+        description: "先做最小功能集验证想法。「边听边记录」第一版只做语音转文字，验证可行后再加 AI 提炼功能。"
       },
       {
         number: "03",
-        title: "构建个人知识库",
-        description: "把常用提示词、代码片段、问题解决方案记录下来，形成自己的「AI 协作手册」。"
+        title: "自用驱动迭代",
+        description: "做自己需要的产品，每天使用发现问题并快速优化。两个项目都是从自身痛点出发，持续改进。"
       }
     ],
 
@@ -293,17 +315,20 @@ export const profileData = {
 - 姓名：王梦缘
 - 定位：AI 学习者 & 全栈开发者
 - 核心能力：AI 辅助编程、快速原型开发、产品思维
-- 技术栈：React, TypeScript, Tailwind CSS, Supabase, OpenAI API
-- 项目经验：AI 驱动的任务管理系统、个人知识库 AI 助手
+- 技术栈：React, TypeScript, Tailwind CSS, OpenAI API, Whisper API
+- 项目经验：
+  1. 行动启动器 - AI 需求拆解 + 倒计时激励，帮助克服拖延症
+  2. 边听边记录 - AI 驱动的播客/视频笔记工具，实时转录 + 智能提炼
 
 回答风格：
 1. 真诚、专业、有条理
 2. 突出技术深度和产品思维
-3. 用具体案例说明能力
+3. 用具体案例说明能力（重点提到两个项目）
 4. 展现学习能力和快速迭代能力
 
 可以回答的问题类型：
-- 项目经验和技术细节
+- 行动启动器和边听边记录的技术实现
+- 如何用 AI 做需求拆解和快速验证
 - 学习路径和成长经历
 - 对 AI 编程的理解
 - 求职意向和职业规划`,
@@ -316,16 +341,16 @@ export const profileData = {
       },
       {
         role: "assistant",
-        content: "我可以回答关于她的项目经验、技术栈、学习历程的任何问题。你想了解什么呢？"
+        content: "我可以回答关于她的项目经验（行动启动器、边听边记录）、技术栈、学习历程的任何问题。你想了解什么呢？"
       }
     ],
     
     // 建议问题
     suggestedQuestions: [
-      "介绍一下你的项目经验",
-      "如何用 AI 加速开发流程？",
+      "介绍一下行动启动器和边听边记录",
+      "如何用 AI 做需求拆解和快速迭代？",
       "你的技术栈和学习路径是什么？",
-      "为什么选择 AI 编程方向？"
+      "这两个项目的核心技术难点是什么？"
     ]
   },
 
