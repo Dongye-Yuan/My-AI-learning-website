@@ -10,7 +10,6 @@ import LearningSection from "@/components/sections/LearningSection";
 import TechStackSection from "@/components/sections/TechStackSection";
 import ChatSection from "@/components/sections/ChatSection";
 import FooterSection from "@/components/sections/FooterSection";
-import { Toaster } from "@/components/ui/toaster";
 
 const Index = () => {
   return (
@@ -22,7 +21,6 @@ const Index = () => {
       <TechStackSection />
       <ChatSection />
       <FooterSection />
-      <Toaster />
     </div>
   );
 };
