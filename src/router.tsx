@@ -1,24 +1,14 @@
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import type { RouteObject } from "react-router-dom";
 
-export const routers = [
-    {
-      path: "/",
-      name: 'home',
-      element: <Index />,
-    },
-    /* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */
-    {
-      path: "*",
-      name: '404',
-      element: <NotFound />,
-    },
+export const routers: RouteObject[] = [
+  {
+    path: "/",
+    element: <Index />,
+  },
+  {
+    path: "*",
+    element: <NotFound />,
+  },
 ];
-
-declare global {
-  interface Window {
-    __routers__: typeof routers;
-  }
-}
-
-window.__routers__ = routers;
