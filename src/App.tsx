@@ -1,16 +1,11 @@
-import { Toaster } from "sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const queryClient = new QueryClient();
 
-const App = ({ children }: { children: React.ReactNode }) => {
+const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster richColors closeButton />
-        {children}
-      </TooltipProvider>
+      {/* 这里只放全局 Provider，不要 Router */}
     </QueryClientProvider>
   );
 };
