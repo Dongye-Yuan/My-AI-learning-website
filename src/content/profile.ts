@@ -163,9 +163,9 @@ export const profileData = {
       ],
       stack: ["React", "TypeScript", "Whisper API", "OpenAI GPT-4", "Supabase"],
       links: {
-        demo: "https://listen-note.vercel.app",
-        github: "https://github.com/wangmengyuan/listen-note"
-      }
+  demo: "https://github.com/Dongye-Yuan/system-audio-notes-whisper/releases/tag/v0.1.0",
+  github: "https://github.com/Dongye-Yuan/system-audio-notes-whisper"
+}
     }
   ],
 
